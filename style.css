@@ -5,6 +5,8 @@
 
 }
 
+
+
 /* PALETA DE COR */
 
 :root {
@@ -20,6 +22,17 @@
     --cinzaEscuro: #948C8C;
     --rosaclaro: #FFE6EF;
 }
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Italic-VariableFont_opsz\,wght.ttf);
+
+}
+
+@font-face {
+  font-family: Rosaline;
+  src: url(./fonts/Rosaline.otf);
+
+}
 
 body {
     background-color: var(--branco);
@@ -28,7 +41,7 @@ body {
 /* HEADER */
 header {
     width: 100%;
-    /* background-color: var(--preto); */
+    background-color: var(--preto);
 }
 
 header>div.container-flex {
@@ -46,30 +59,54 @@ header>div.container-flex {
     margin: 0 auto;
 }
 
-#logo{
+#logo {
     width: 155px;
 }
 
-.links{
+.links {
     /* background-color: rgb(234, 212, 255); */
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-.links a{
+.links a {
     font-size: 25px;
     color: var(--rosaclaro);
     text-decoration: none;
+    font-family: "Rosaline", regular;
 }
 
-.links a:hover{
+.links a:hover {
     color: var(--vinho);
     /* border-bottom: 1px solid var(--vinho); */
 }
 
 #icone-barras,
 #icone-x,
-#menu_botao{
+#menu_botao {
     display: none;
 }
+
+/* BANNER */
+.banner {
+    background: url(./banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 221px);
+    width: 100%;
+
+}
+
+.servicos{
+    font-size: 40px;
+    align-items: center;
+    color: var(--marrom);
+    margin-left: 750px;
+    margin-top: 90px;
+    font-family: "Rosaline", Regular;
+   
+}
+
+
