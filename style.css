@@ -5,31 +5,71 @@
 
 }
 
-:root{
+/* PALETA DE COR */
+
+:root {
     --branco: #fff;
     --rosa: #E1AEB3;
+    --rose: #E1AEB3;
     --vinho: #611E01;
+    --marrom: #520909;
+    --vermelho: #812122;
     --preto: #150F0B;
+    --cinza: #BCBCBC;
+    --bege: #BEB3B3;
+    --cinzaEscuro: #948C8C;
     --rosaclaro: #FFE6EF;
 }
 
-body{
+body {
     background-color: var(--branco);
 }
-header{
+
+/* HEADER */
+header {
     width: 100%;
+    /* background-color: var(--preto); */
 }
 
-header>div.container-flex{
+header>div.container-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #150F0B;
-    height: 221px ;
+    height: 221px;
+    /* background-color: #150F0B; */
+
 }
 
-.container-flex{
+.container-flex {
     width: 85%;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+#logo{
+    width: 155px;
+}
+
+.links{
+    /* background-color: rgb(234, 212, 255); */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.links a{
+    font-size: 25px;
+    color: var(--rosaclaro);
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: var(--vinho);
+    /* border-bottom: 1px solid var(--vinho); */
+}
+
+#icone-barras,
+#icone-x,
+#menu_botao{
+    display: none;
 }
