@@ -105,8 +105,315 @@ header>div.container-flex {
     color: var(--marrom);
     margin-left: 750px;
     margin-top: 90px;
+    margin-bottom: 90px;
     font-family: "Rosaline", Regular;
    
 }
+
+.servicos-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 20px;
+    gap: 200px;}
+   
+.servicos-card div p{
+    text-align: center;
+}
+
+
+.card-cursos:hover {
+color: var(--rosaclaro);
+
+  transition: 0.3s; 
+}
+.card-sobre:hover {
+color: var(--rosaclaro);
+
+  transition: 0.3s; 
+}
+.card-encomendas:hover {
+color: var(--rosaclaro);
+
+  transition: 0.3s; 
+}
+
+
+.sobreNos{
+    font-size: 35px;
+font-family: "Inter", Regular;
+}
+.encomendas{
+    font-size: 35px;
+    font-family: "Inter", regular;
+}
+.cursos{
+    font-size: 35px;
+    font-family: "Inter";
+}
+h3{
+    font-size: 40px;
+    margin-top: 25px;
+font-family: "Rosaline", Regular;
+}
+
+
+.sobre-nos-section {
+    background-image: url(./img/malu\ fundo\ rosa.svg);
+    object-fit: cover;
+    height: 1700px;
+    padding: 0;
+    width: 100%;
+    margin-top: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.sobre-nos-container {
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    margin-left: 20%;
+}
+
+.sobre-nos-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Rosaline", regular;
+    margin-left: 13%;
+}
+
+.sobreNosTexto {
+    display: flex;  
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+.texto {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    padding: 25px 30px;
+    border-radius: 25px;
+    width: 55%;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 40px;
+}
+
+.malu img {
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 150px;
+ 
+}
+
+.catalogo {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.catalogo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background: white;
+    width: 180px;
+    padding: 20px 10px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: "Inter", regular;
+}
+
+.card img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.card .preco {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+
+.contato-section {
+    position: relative;
+    width: 60%;
+    padding: 80px 0;
+    margin: 0 auto;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/cookies.svg);
+    align-items: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.card-contato {
+    position: relative;
+    z-index: 2;
+    width: 350px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.card-contato h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+.card-contato input,
+.card-contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d6d6d6;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.card-contato textarea {
+    height: 100px;
+    resize: none;
+}
+
+
+.card-contato button {
+    width: 100%;
+    background: #7d2c22;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.card-contato button:hover {
+    background: #5e1f17;
+}
+
+/* Fundo rosa arredondado */
+.footer-contatos {
+    background-color: #c78b92;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 1440 100">\
+<path fill="%23c78b92" d="M0,32 C240,96 480,0 720,32 C960,64 1200,0 1440,32 L1440,0 L0,0 Z"></path>\
+</svg>');
+    background-size: cover;
+    position: absolute;
+    top: -99px;
+    left: 0;
+}
+
+.footer-contatos h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Ícones e texto */
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+contato i {
+    font-size: 18px;
+}
+
+.mapa-container {
+    maainerx-width: 600px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+/* -------------------- Responsividade --------------- */
+
+#sombra {
+        background-color: #9D562390;
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        right: -101vw;
+        transition: .5s;
+    }
+
+    #menu_botao {
+        display: block;
+        z-index: 1;
+    }
+
+
 
 

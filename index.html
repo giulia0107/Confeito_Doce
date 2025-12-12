@@ -12,16 +12,18 @@
 </head>
 
 <body>
-
+<div id="sombra"></div>
     <header>
         <div class="container-flex">
             <img id="logo" src="logo rosa .svg" alt="Logo da Confeito Doce">
 
-            <nav id= "menu" class="links">
+            <nav id="menu" class="links">
                 <a href="#catalogo">Carrinho de compras</a>
                 <a href="#">Perfil</a>
             </nav>
-            <button id= "menu_botao" type = "button">
+
+            <!-- Menu de Hamburguer-->
+            <button id="menu_botao" onclick="abreFechaMenu()">
                 <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                     <path
                         d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
@@ -32,32 +34,185 @@
                         d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
                 </svg>
             </button>
+
+            <!-- <button id="menu_botao" type="button">
+                <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                        d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                </svg>
+
+                <svg id="icone-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                        d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
+                </svg>
+            </button> -->
         </div>
     </header>
 
     <main>
         <section class="banner">
-           
+
         </section>
         <h1 class="servicos">O que você encontra na Confeito Doce:</h1>
-       <div class="servicos-card">
+        <div class="servicos-card container-flex">
             <div class="cursos">
-                <img src="./img/chapeu.svg">
+
                 <h3>Cursos:</h3>
+                <div class="card-cursos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M240,112a56.06,56.06,0,0,0-56-56c-1.77,0-3.54.1-5.29.26a56,56,0,0,0-101.42,0C75.54,56.1,73.77,56,72,56A56,56,0,0,0,48,162.59V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V162.59A56.09,56.09,0,0,0,240,112Zm-48,96H64V167.42a55.49,55.49,0,0,0,8,.58H184a55.49,55.49,0,0,0,8-.58Zm-8-56H170.25l5.51-22.06a8,8,0,0,0-15.52-3.88L153.75,152H136V128a8,8,0,0,0-16,0v24H102.25l-6.49-25.94a8,8,0,1,0-15.52,3.88L85.75,152H72a40,40,0,0,1,0-80l.58,0A55.21,55.21,0,0,0,72,80a8,8,0,0,0,16,0,40,40,0,0,1,80,0,8,8,0,0,0,16,0,55.21,55.21,0,0,0-.58-8l.58,0a40,40,0,0,1,0,80Z">
+                        </path>
+                    </svg>
+                </div>
+
+
                 <p>Aprenda receitas únicas com nossos chefs.</p>
             </div>
 
             <div class="sobreNos">
-             <img src="./img/pessoas.svg">
-             <h3>Sobre Nós</h3>
-             <p>Conheça nossa história e participe da nossa comunidade.</p>
+                <h3>Sobre Nós</h3>
+                <div class="card-sobre">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z">
+                        </path>
+                    </svg>
+                </div>
+
+
+                <p>Conheça
+                    nossa história
+                    e participe da nossa comunidade.</p>
             </div>
 
             <div class="encomendas">
-                <img src="" alt="">
+                <h3>Encomendas</h3>
+                <div class="card-encomendas">
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor"
+                        class="bi bi-cake2" viewBox="0 0 16 16">
+
+
+                        <path
+                            d="m3.494.013-.595.79A.747.747 0 0 0 3 1.814v2.683q-.224.051-.432.107c-.702.187-1.305.418-1.745.696C.408 5.56 0 5.954 0 6.5v7c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 15.773 5.898 16 8 16s4.022-.227 5.432-.603c.701-.187 1.305-.418 1.745-.696.415-.261.823-.655.823-1.201v-7c0-.546-.408-.94-.823-1.201-.44-.278-1.043-.51-1.745-.696A12 12 0 0 0 13 4.496v-2.69a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 12 1.813V4.3a22 22 0 0 0-2-.23V1.806a.747.747 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v2.204a29 29 0 0 0-2 0V1.806A.747.747 0 0 0 7.092.802l-.598-.79-.595.792A.747.747 0 0 0 6 1.813V4.07c-.71.05-1.383.129-2 .23V1.806A.747.747 0 0 0 4.092.802zm-.668 5.556L3 5.524v.967q.468.111 1 .201V5.315a21 21 0 0 1 2-.242v1.855q.488.036 1 .054V5.018a28 28 0 0 1 2 0v1.964q.512-.018 1-.054V5.073c.72.054 1.393.137 2 .242v1.377q.532-.09 1-.201v-.967l.175.045c.655.175 1.15.374 1.469.575.344.217.356.35.356.356s-.012.139-.356.356c-.319.2-.814.4-1.47.575C11.87 7.78 10.041 8 8 8c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 6.639 1 6.506 1 6.5s.012-.139.356-.356c.319-.2.814-.4 1.47-.575M15 7.806v1.027l-.68.907a.94.94 0 0 1-1.17.276 1.94 1.94 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277L1 8.82V7.806c.42.232.956.428 1.568.591C3.978 8.773 5.898 9 8 9s4.022-.227 5.432-.603c.612-.163 1.149-.36 1.568-.591m0 2.679V13.5c0 .006-.012.139-.356.355-.319.202-.814.401-1.47.576C11.87 14.78 10.041 15 8 15c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575-.344-.217-.356-.35-.356-.356v-3.02a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.94.94 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426" />
+                    </svg>
+                </div>
+
+                <p>Doces personalizados para qualquer ocasião!</p>
+            </div>
+        </div>
+        </div>
+        <section class="sobre-nos-section">
+            <div class="sobre-nos"></div>
+
+            <div class="sobre-nos-container">
+                <h2>Sobre nós:</h2>
+
+                <div class="sobreNosTexto">
+                    <div class="texto">
+                        <p>
+                            A loja começou com uma avó apaixonada por preparar receitas de confeitaria para seus netos.
+                            Após se aposentar, ela decidiu vender seus bolos e doces, que rapidamente conquistaram
+                            clientes
+                            pelo sabor aconchegante e nostálgico de “comida de vó”.<br><br>
+                            O sucesso foi tão grande que muitas pessoas passaram a se interessar também pelo preparo
+                            dessas
+                            delícias. Assim nasceu a Loja & Escola de Confeitaria da Dona Tereza.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-  </div>
+            <div class="scallop-bottom"></div>
+        </section>
+
+
+        <section id="catalogo" class="catalogo">
+            <h2>Catálogo:</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>BOLOS</h3>
+                    <img src="./img/bolo REALL.svg" alt="Bolo">
+                    <p class="preco">R$ 49,99</p>
+                </div>
+
+                <div class="card">
+                    <h3>BROWNIES</h3>
+                    <img src="./img/brownie.svg" alt="Brownie">
+                    <p class="preco">R$ 15,00</p>
+                </div>
+
+                <div class="card">
+                    <h3>DONUTS</h3>
+                    <img src="./img/donuts.svg" alt="Donuts">
+                    <p class="preco">R$ 19,99</p>
+                </div>
+
+                <div class="card">
+                    <h3>COOKIES</h3>
+                    <img src="./img/cokies.svg" alt="Cookies">
+                    <p class="preco">R$ 15,00</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contato-section">
+
+            <div class="card-contato">
+                <h2>Entre em contato.</h2>
+
+                <form>
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="E-mail">
+                    <textarea placeholder="Escreva sua dúvida"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+        </section>
+
+        <footer class="footer-contatos">
+
+            <h2>Nossos contatos</h2>
+
+            <div class="info-container">
+
+                <div class="contato">
+                    <i class="numeroContato"></i>
+                    <img src="./img/phone 1.svg" alt="">
+                    <span>(00)00000-0000</span>
+                </div>
+
+                <div class="local">
+                    <i class="localizacao"></i>
+                    <img src="./img/map-pin 1.svg" alt="">
+                    <span>Rua Niterói 180</span>
+                </div>
+
+                <div class="contato">
+                    <i class="redesSociais"></i>
+                    <img src="./img/instagram.svg" alt="">
+                    <span>@confeito.docee</span>
+                </div>
+
+            </div>
+
+            <div class="mapa-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7225464715874!2d-46.57351512385809!3d-23.576619462766698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5c2a99571aff%3A0x2a083a0688405f3!2sSão%20Caetano%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1702390000000"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+        </footer>
+
     </main>
 </body>
 
